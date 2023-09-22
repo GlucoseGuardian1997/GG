@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4535201532860503286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4535201532860503284}
+  - component: {fileID: 4535201532860503285}
+  - component: {fileID: 4535201532860503283}
+  m_Layer: 0
+  m_Name: CoreSpawnner
+  m_TagString: Untagged
+  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4535201532860503284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4535201532860503286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.05, y: -4.55, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4535201532860503285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4535201532860503286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c8adf03558349848b315ab37481606c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataHandler: {fileID: 4535201532860503283}
+  parentObject: {fileID: 4535201532860503284}
+  gridBoxPrefab: {fileID: 527569321077679541, guid: 6282cc4905d88124ab80940077a4f6d0, type: 3}
+  offsetDistance: 2
+  squareViewPrefab: {fileID: 7340261694090665099, guid: e2e9d62af819b8c47a0dfd81d59a50ca, type: 3}
+--- !u!114 &4535201532860503283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4535201532860503286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf8adc01ec28be4cbe0972f67ad2095, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SquareDataSet:
+    SaveName: 1
+    BaseGirdSizeX: 2
+    BaseGirdSizeY: 2
+    SquareData:
+    - PosX: 0
+      PosY: 0
+      rotZ: 45
+      scaleX: 1
+      scaleY: 1
+      color: FF0000
+      name: 1
+    - PosX: 0
+      PosY: 1
+      rotZ: 20
+      scaleX: 1
+      scaleY: 0.5
+      color: FF0000
+      name: 2
+    - PosX: 1
+      PosY: 0
+      rotZ: 0
+      scaleX: 0.5
+      scaleY: 1
+      color: FF0000
+      name: 3
+    - PosX: 1
+      PosY: 1
+      rotZ: 0
+      scaleX: 2
+      scaleY: 2
+      color: FF0000
+      name: 4
+  RawJson: 
+  LoadFileName: 
